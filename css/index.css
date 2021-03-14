@@ -16,16 +16,75 @@ body {
   margin: auto;
   background-color: #333b50;
 }
+h3 {
+  display: flex;
+  text-align: center;
+  padding: 0 0 0 208px;
+  text-align: justify;
+}
 .titleheader {
   background-image: url(../img/title/titleheader.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
 }
 .menu {
   display: inline;
   margin: 0;
   text-transform: uppercase;
   padding: 3px;
+}
+.burger-icon{
+  font-size: 2.8rem;
+}
+#burger-checkbox{
+  display: none;
+}
+
+.block-one {
+  display: flex;
+  text-align: center;
+  padding: 0 0 0 208px;
+}
+.block-profesional {
+  background-image: url(../img/title/titleprofesional.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  min-height: 500px;
+}
+.block-portfolio{
+  
+}
+.button-hover {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.click-image{
+  display: inline-flex;
+  min-height: 300px;
+  padding:40px 0 0 0 ;
+}
+.block-experience {
+  background-image: url(../img/title/titlemain.png);
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.block-futer {
+  background-image: url(../img/title/titlefuter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
 @media (min-width: 610px) {
   header nav {
@@ -42,6 +101,7 @@ body {
   color: var(--white-color);
   font-family: "Blinker", sans-serif;
   font-size: 85px;
+  text-align: justify;
 }
 .punctuationmark {
   color: var(--green-color);
@@ -51,19 +111,33 @@ a {
 }
 .number {
   color: var(--bec-color);
+  padding:  0 10px 0 0;
 }
 .seemore {
   color: var(--bec-color);
+}
+h4{
+  color: var(--white-color);
+  font-size: 24px;
+  font-family: "Blinker", sans-serif;
 }
 .titlethree {
   color: var(--white-color);
   font-size: 24px;
   font-family: "Blinker", sans-serif;
+  display: flex;
+  text-align: center;
+  padding: 0 0 0 208px;
+  text-align: justify;
 }
 .titletwo {
   color: var(--white-color);
   font-size: 42px;
   font-family: "Blinker", sans-serif;
+  display: flex;
+  text-align: center;
+  padding: 0 0 0 208px;
+  text-align: justify;
 }
 .years {
   color: var(--green-color);
@@ -71,7 +145,9 @@ a {
 }
 .knowledge {
   color: var(--bec-color);
-  font-size: 14px;
+  font-size: 24px;
+  padding: 20px 0 0 0;
+  
 }
 .titlefive {
   color: var(--white-color);
@@ -95,4 +171,5 @@ a {
 .production {
   color: var(--white-color);
   font-size: 14px;
+  align-items: center;
 }

@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyResume</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/title/titleheader.png">
 </head>
 
 <body>
     <!-- Header(Шапка)-->
     <header id="home" class="titleheader">
         <nav>
+            <div>
+                <img src="img/my-logo.jpg" alt="Logo" width="45">
+            </div>
+            <label class="burger-icon" for="burger-checkbox">&#8801;</label>
+            <input type="checkbox" id="burger-checkbox">
             <ul class="menu">
-                <li class="menu"> <img src="img/my-logo.jpg" alt="Logo" width="35"></li>
                 <li class="menu"><a href="#home">Home</a></li>
                 <li class="menu"><a href="#Professional">Professional</a></li>
                 <li class="menu"><a href="#Experience">Experience</a></li>
@@ -22,9 +27,11 @@
                 <li class="menu"><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-        <h1 class="imserhii">I <span class="punctuationmark">'</span> m <br>SeRhii <br>Fihas<span
-                class="punctuationmark">.</span></h1>
-        <h3 class="titlethree"> UX/UI DESIGNER & WEB DEVELOPER</h3>
+        <div class="block-one">
+            <h1 class="imserhii">I <span class="punctuationmark">'</span> m <br>
+                SeRhii <br>Fihas<span class="punctuationmark">.</span></h1>
+        </div>
+        <h3 class="titlethree"> UX/UI DESIGNER & WEB <br> DEVELOPER</h3>
     </header>
 
     <!-- Main -->
@@ -32,7 +39,7 @@
         <!--HR1 -->
         <div>
             <article>
-                <h2> <img width="60" src="img/my-logo.jpg" alt="Logo"></h2>
+                <div><img width="45" src="img/my-logo.jpg" alt="Logo"></div>
                 <p class="paragraph">
                     I'M A PARAGRAPH. CLICK HERE TO ADD YOUR OWN TEXT AND EDIT ME. <br>
                     IT’S EASY. JUST CLICK “EDIT TEXT” OR DOUBLE CLICK ME TO <br>
@@ -40,43 +47,45 @@
                     FEEL FREE TO DRAG AND DROP ME ANYWHERE YOU LIKE ON YOUR PAGE.
                 </p>
                 <!--В батонны зробити посилання на документ пдф  -->
-                <a href="pdf/pdfff.pdf">Download Resume</a>
+                <a class="button-hover" href="pdf/pdfff.pdf">Download Resume</a>
             </article>
         </div>
         <!-- HR (Professional)-->
         <hr>
-        <article>
+        <article class="block-profesional">
             <h2 class="titletwo" id="Professional"><span class="number">01</span> Professional </h2>
             <h3 class="titlethree"> MY KNOWLEDGE LEVEL IN SOFTWARE </h3>
-            <ul>
+            <ul class="knowledge">
                 <li class="knowledge">WORDPRESS</li>
                 <li class="knowledge">DRUPAL</li>
                 <li class="knowledge">WIX</li>
                 <li class="knowledge">PHOTOSHOP</li>
                 <li class="knowledge">ILLUSTRATOR</li>
                 <li class="knowledge">JAVASCRIPT</li>
-                <li class="knowledge">HTML&CSS</li>
+                <li class="knowledge">HTML & CSS</li>
             </ul>
-            <img src="img/title/titleprofesional.png" alt="titleprofesional">
+
         </article>
         <!-- HR (Portfolio) -->
         <hr>
-        <article>
+        <article class="block-portfolio">
             <h2 class="titletwo"> <span class="number">02</span> PORTFOLIO</h2>
             <h3 class="titlethree"> MY LATEST WORK. <a href="Portfolio.html"> <span class="seemore">SEE more></span></a>
             </h3>
-            <p> <img width="300" src="img/diverone.jpg" alt="Diver"></p>
-            <p> <img width="300" src="img/appletab.jpg" alt="ApleMac"></p>
-            <p> <img width="300" src="img/phone.jpg" alt="foto"></p>
+            <div class="click-image">
+                <p> <img width="300" height="197" src="img/diverone.jpg" alt="Diver"></p>
+                <p> <img width="300" src="img/appletab.jpg" alt="ApleMac"></p>
+                <p> <img width="300" height="195" src="img/phone.jpg" alt="foto"></p>
+            </div>
         </article>
         <!-- HR(03 Experience) -->
         <hr>
-        <article>
+        <article class="block-experience">
             <h2 class="titletwo" id="#Experience"> <span class="number" id="Experience">03</span> Experience</h2>
             <h3 class="titlethree">MY LATEST WORK.</h3>
             <div>
                 <p class="years"> 2014-2016 </p>
-                <h4 class="titlethree">HOP!</h4>
+                <h4>HOP!</h4>
                 <h5 class="titlefive">Creative Design Lead</h5>
                 <p class="paragraph">
                     I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
@@ -84,67 +93,66 @@
                     your own content and make changes to the font. 
                 </p>
             </div>
-        </article>>
-        <div>
-            <p class="years"> 2012-2014 </p>
-            <h4 class="titlethree">WISBOOM</h4>
-            <h5 class="titlefive">Associate Design Director</h5>
-            <p class="paragraph">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                or double click me to
-                add your own content and make changes to the font. 
-            </p>
-        </div>
-        <div>
-            <p class="years"> 2011-2012 </p>
-            <h4 class="titlethree">SNAP UP</h4>
-            <h5 class="titlefive">Director of Design</h5>
-            <p class="paragraph">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                or double click me
-                to
-                add your own content and make changes to the font. 
-            </p>
-        </div>
-        <div>
-            <p class="years"> 2006-2011 </p>
-            <h4 class="titlethree">GDV</h4>
-            <h5 class="titlefive">UL/UX Design</h5>
-            <p class="paragraph">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                or double click me
-                to
-                add your own content and make changes to the font. 
-            </p>
-        </div>
-        <div>
-            <p class="years"> 2005-2006 </p>
-            <h4 class="titlethree">BLUE APP</h4>
-            <h5 class="titlefive">AUL/UX Design</h5>
-            <p class="paragraph">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                or double click me
-                to
-                add your own content and make changes to the font. 
-            </p>
-        </div>
-        <div>
-            <p class="years"> 2004-2005 </p>
-            <h4 class="titlethree">MARBLE</h4>
-            <h5 class="titlefive">Ul Design</h5>
-            <p class="paragraph">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                or double click me
-                to
-                add your own content and make changes to the font. 
-            </p>
-        </div>
-        <img src="img/title/titlemain.png" alt="titlemain" width="1519" height="2909">
+            <div>
+                <p class="years"> 2012-2014 </p>
+                <h4>WISBOOM</h4>
+                <h5 class="titlefive">Associate Design Director</h5>
+                <p class="paragraph">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me to
+                    add your own content and make changes to the font. 
+                </p>
+            </div>
+            <div>
+                <p class="years"> 2011-2012 </p>
+                <h4>SNAP UP</h4>
+                <h5 class="titlefive">Director of Design</h5>
+                <p class="paragraph">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me
+                    to
+                    add your own content and make changes to the font. 
+                </p>
+            </div>
+            <div>
+                <p class="years"> 2006-2011 </p>
+                <h4>GDV</h4>
+                <h5 class="titlefive">UL/UX Design</h5>
+                <p class="paragraph">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me
+                    to
+                    add your own content and make changes to the font. 
+                </p>
+            </div>
+            <div>
+                <p class="years"> 2005-2006 </p>
+                <h4>BLUE APP</h4>
+                <h5 class="titlefive">AUL/UX Design</h5>
+                <p class="paragraph">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me
+                    to
+                    add your own content and make changes to the font. 
+                </p>
+            </div>
+            <div>
+                <p class="years"> 2004-2005 </p>
+                <h4>MARBLE</h4>
+                <h5 class="titlefive">Ul Design</h5>
+                <p class="paragraph">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me
+                    to
+                    add your own content and make changes to the font. 
+                </p>
+            </div>
+        </article>
     </main>
     <!-- Footer  Contact-->
     <hr>
     <footer>
-        <div>
+        <div class="block-futer">
             <h3 class="titlethree" id="Contact">Contact</h3>
             <p class="paragraph-contact">
                 I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story
@@ -174,11 +182,10 @@
                 <input type="submit" value="SEND">
                 <p class="submitting">Thanks for submitting!</p>
             </form>
-            <img src="img/title/titlefuter.png" alt="titlefuter" width="1519" height="553">
         </div>
         <hr>
         <div>
-            <p> <img width="60" src="img/my-logo.jpg" alt="LOgo">
+            <p> <img width="45" src="img/my-logo.jpg" alt="LOgo">
                 <span class="production">© 2023 by Robert Caro. Proudly created with Wix.com </span>
             </p>
         </div>
