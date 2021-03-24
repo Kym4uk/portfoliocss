@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyResume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/title/titleheader.png">
 </head>
@@ -16,7 +16,7 @@
     <!-- Header-->
     <header id="home" class="titleheader">
         <nav>
-            <div>
+            <div class="logotip">
                 <img src="img/my-logo.jpg" alt="Logo" width="45">
             </div>
             <ul class="menu">
@@ -26,6 +26,7 @@
                 <li class="menu"><a href="Portfolio.html">Portfolio</a></li>
                 <li class="menu"><a href="#Contact">Contact</a></li>
             </ul>
+            <div class="clock"></div>
         </nav>
         <div class="block-one">
             <h1 class="imserhii">I <span class="punctuationmark">'</span> m <br>
@@ -33,12 +34,18 @@
         </div>
         <h3 class="titlethree"> UX/UI DESIGNER & WEB <br> DEVELOPER</h3>
     </header>
-
-    <!-- Main -->
+    <!-- carousel -->
     <main>
-        <!--HR1 -->
-        <div>
-            <article>
+        <div class="portfolio-carousel">
+            <img class="current-image" src="" alt="Carousel image">
+            <button class="next">Next</button>
+            <button class="prev">Previous</button>
+        </div>
+    </main>
+
+    <!-- <main>
+            <div>
+             <article>
                 <div> <img width="65" src="img/my-logo.jpg" alt="Logo"></div>
                 <p class="paragraph">
                     I'M A PARAGRAPH. CLICK HERE TO ADD YOUR OWN TEXT AND EDIT ME. <br>
@@ -50,7 +57,7 @@
             </article>
         </div>
         <!-- HR (Professional)-->
-        <hr>
+    <!-- <hr>
         <article class="block-profesional">
             <h2 class="titletwo" id="Professional"><span class="number">01</span> Professional </h2>
             <h3 class="titlethree"> MY KNOWLEDGE LEVEL IN SOFTWARE </h3>
@@ -66,7 +73,7 @@
 
         </article>
         <!-- HR (Portfolio) -->
-        <hr>
+    <!-- <hr>
         <article class="block-portfolio">
             <h2 class="titletwo"> <span class="number">02</span> PORTFOLIO</h2>
             <h3 class="titlethree"> MY LATEST WORK. <a href="Portfolio.html"> <span class="seemore">SEE more></span></a>
@@ -76,9 +83,9 @@
                 <p> <img width="300" src="img/appletab.jpg" alt="ApleMac"></p>
                 <p> <img width="300" height="195" src="img/phone.jpg" alt="foto"></p>
             </div>
-        </article>
-        <!-- HR(03 Experience) -->
-        <hr>
+        </article> -->
+    <!-- HR(03 Experience) -->
+    <!-- <hr>
         <article class="block-experience">
             <h2 class="titletwo" id="#Experience"> <span class="number" id="Experience">03</span> Experience</h2>
             <h3 class="titlethree">MY LATEST WORK.</h3>
@@ -123,8 +130,8 @@
                     to
                     add your own content and make changes to the font. 
                 </p>
-            </div>
-            <div>
+            </div> -->
+    <!-- <div>
                 <p class="years"> 2005-2006 </p>
                 <h4>BLUE APP</h4>
                 <h5 class="titlefive">AUL/UX Design</h5>
@@ -148,7 +155,7 @@
             </div>
         </article>
     </main>
-    <!-- Footer  Contact-->
+    
     <hr>
     <footer>
         <div class="block-futer">
@@ -191,7 +198,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>  -->
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
